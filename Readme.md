@@ -65,8 +65,6 @@ potential savings opportunities.
 
 
 
-
-
 **Subscription Auditor** is an interactive financial dashboard built with
 **Streamlit, Python, Pandas, and Google's Gemini API**.
 
