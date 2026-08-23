@@ -1,33 +1,25 @@
-Here is a breakdown of what **Mermaid diagrams** are, followed by your complete, copy-paste ready **Terminal-Style `README.md**` complete with an embedded Mermaid architecture diagram.
+```mermaid
+graph TD
+    A[User Input / CSV Data] --> B[Pandas Data Engine]
+    B --> C[KPI Calculation & Spending Metrics]
+    B --> D[Rule-Based Health Score Engine]
 
----
+    C --> E[Streamlit Dashboard UI]
+    D --> E
 
-### 💡 What is Mermaid?
+    B --> F[Google Gemini API Engine]
+    F -->|gemini-2.5-flash| G[AI Financial Advisor & Action Plan]
+    G --> E
 
-**Mermaid** is a Markdown-native syntax that turns text definitions into visual diagrams directly inside GitHub or Gitlab `.md` files. Instead of drawing an image, taking a screenshot, and uploading it, you write simple text inside a ```mermaid codeblock, and GitHub automatically renders it as a clean flow diagram, architecture chart, or sequence map.
 
-In the README below, a Mermaid flow diagram has been included under the **SYSTEM ARCHITECTURE** section to visualize how data flows from your user input to Pandas and the Gemini API.
-
----
-
-### 💻 Complete Terminal-Style `README.md`
-
-Copy and paste the code block below directly into your project's `README.md` file:
 
 ```markdown
-
-```
-
-______     __                   *ption
-/ _*/ /* __/ /  _______ _____ (*)___  ___  ___
-*\ / _ / // / _ / __/ __/ / _ / / / -*) _ 
-
-/***/*//*_,*/*.__/_*/*/ /*/*//*/*/*/_*/_**/
-/ _ |** ***/ /* / /**  ____
-/ __ / // / _  / // / __/ _ / __/
-/*/ /*_,*/_,*/_,*/_*/___/*/   v1.0.0
-
-```
+```text
+  ___  _   _ ____  ____   ____ ____  ___ ____ _____ ___  _  _ 
+ / _ \| | | |  _ \|  _ \ / ___|  _ \|_ _|  _ \_   _/ _ \| || |
+| | | | | | | |_) | |_) | |   | |_) || || |_) || || | | | || |_
+| |_| | |_| |  _ <|  _ <| |___|  _ < | ||  __/ | || |_| |__   _|
+ \__\_\\___/|_| \_|_| \_\\____|_| \_\___|_|    |_| \___/   |_|
 
 > **SYSTEM STATUS:** `[ONLINE]` — Financial Audit & Subscription Telemetry Dashboard  
 > **ENGINE:** Python 3.x | Streamlit UI | Google Gemini API (`gemini-2.5-flash`)
