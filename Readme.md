@@ -53,6 +53,19 @@ potential savings opportunities.
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
+## PROJECT SCREENSHOTS
+
+<img width="1280" height="991" alt="susb1" src="https://github.com/user-attachments/assets/6bffbad9-fda6-47f9-bc74-24a9a5d8b646" />
+
+<img width="1280" height="998" alt="subs2" src="https://github.com/user-attachments/assets/cd275dcb-4040-430f-891f-02af6a654581" />
+
+<img width="1280" height="998" alt="subs3" src="https://github.com/user-attachments/assets/d35eeff4-3b92-4e7c-bbe9-548c0767a505" />
+
+<img width="1280" height="994" alt="subs4" src="https://github.com/user-attachments/assets/b082cd26-79d1-4ff6-b694-8daec7960cdc" />
+
+
+
+
 
 **Subscription Auditor** is an interactive financial dashboard built with
 **Streamlit, Python, Pandas, and Google's Gemini API**.
