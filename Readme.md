@@ -1,7 +1,4 @@
 
-````markdown
-<div align="center">
-
 ```text
 ╔══════════════════════════════════════════════════════════════════════╗
 ║                                                                      ║
@@ -449,10 +446,6 @@ subscription-auditor/
 ├── .env
 │   └── Local API configuration
 │
-├── .gitignore
-│   └── Prevents secrets and virtual environments
-│       from being committed
-│
 └── README.md
     └── Project documentation
 ```
@@ -670,18 +663,4 @@ STATUS: ONLINE
 **Track recurring expenses. Understand spending. Optimize subscriptions.**
 
 </div>
-```
 
-### One important thing before you paste it
-
-There are **three placeholders** you should replace:
-
-```text
-YOUR-LIVE-APP-URL-HERE
-YOUR-GITHUB-REPOSITORY-URL
-YOUR_GEMINI_API_KEY
-```
-
-The last one is only an example in the documentation, **not your actual key**.
-
-Also, I deliberately kept the architecture diagram honest to your current app: **Streamlit → session state/Pandas → analytics + Gemini → dashboard**. I didn't throw in fake databases, authentication, Kafka, microservices, or other résumé seasoning that your application doesn't actually use. That can actually hurt you if the evaluator asks you to explain the architecture.
