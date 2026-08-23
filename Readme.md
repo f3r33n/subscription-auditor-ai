@@ -1,69 +1,122 @@
-
-# 💳 Subscription Auditor
-
-A modern, dark-themed financial dashboard built with **Streamlit** for tracking, analyzing, and optimizing recurring digital subscriptions. Features an integrated AI Financial Advisor powered by the **Google Gemini API** (`gemini-2.5-flash`).
+Here is a breakdown of what **Mermaid diagrams** are, followed by your complete, copy-paste ready **Terminal-Style `README.md**` complete with an embedded Mermaid architecture diagram.
 
 ---
 
-## 🌟 Key Features
+### 💡 What is Mermaid?
 
-- **📊 KPI Financial Overview**: Real-time breakdown of monthly and annual spending, average subscription costs, and discretionary vs. essential splits.
-- **🏥 Subscription Health Score**: Transparent rule-based health status (Healthy, Review, Critical) detecting spending leaks and over-budget thresholds.
-- **✏️ Interactive Editor**: Add, edit, or remove subscriptions directly within an in-app data table.
-- **📁 Data Import/Export**: Upload custom CSV subscription lists or export your current setup instantly.
-- **📈 Savings Simulator**: Interactive slider to model potential annual savings by cutting non-essential subscriptions.
-- **🤖 Gemini AI Advisor**: Dynamic financial advice generated via the `google-genai` SDK for audit reports, alternative recommendations, and a 30-day action plan.
+**Mermaid** is a Markdown-native syntax that turns text definitions into visual diagrams directly inside GitHub or Gitlab `.md` files. Instead of drawing an image, taking a screenshot, and uploading it, you write simple text inside a ```mermaid codeblock, and GitHub automatically renders it as a clean flow diagram, architecture chart, or sequence map.
+
+In the README below, a Mermaid flow diagram has been included under the **SYSTEM ARCHITECTURE** section to visualize how data flows from your user input to Pandas and the Gemini API.
 
 ---
-## Pictures
-<img width="1280" height="991" alt="susb1" src="https://github.com/user-attachments/assets/0e0bf238-b620-4918-b77a-bd884f192ee3" />
-<img width="1280" height="998" alt="subs2" src="https://github.com/user-attachments/assets/04359ec2-1d91-43f4-8592-bf30a50f87d0" />
-<img width="1280" height="998" alt="subs3" src="https://github.com/user-attachments/assets/1f3fcd52-f780-4710-bfc9-f823379b5665" />
-<img width="1280" height="994" alt="subs4" src="https://github.com/user-attachments/assets/50df9747-93e8-4379-8c12-847b26f3bf0f" />
+
+### 💻 Complete Terminal-Style `README.md`
+
+Copy and paste the code block below directly into your project's `README.md` file:
+
+```markdown
+
+```
+
+______     __                   *ption
+/ _*/ /* __/ /  _______ _____ (*)___  ___  ___
+*\ / _ / // / _ / __/ __/ / _ / / / -*) _ 
+
+/***/*//*_,*/*.__/_*/*/ /*/*//*/*/*/_*/_**/
+/ _ |** ***/ /* / /**  ____
+/ __ / // / _  / // / __/ _ / __/
+/*/ /*_,*/_,*/_,*/_*/___/*/   v1.0.0
+
+```
+
+> **SYSTEM STATUS:** `[ONLINE]` — Financial Audit & Subscription Telemetry Dashboard  
+> **ENGINE:** Python 3.x | Streamlit UI | Google Gemini API (`gemini-2.5-flash`)
+
+---
+
+## 🖥️ $ sys_info --overview
+
+The **Subscription Auditor** is a terminal-inspired, dark-themed dashboard built with **Streamlit** to analyze, track, and optimize recurring digital expenses. It integrates rule-based heuristic scoring with real-time AI intelligence via the `google-genai` SDK.
 
 
+```
 
-## 🚀 Quick Start
+[+] TELEMETRY Breakdown: Real-time Monthly & Annual KPI Tracking
+[+] HEALTH DIAGNOSTICS: Automated leakage detection & budget threshold scoring
+[+] DATA MATRIX EDITOR: In-app live manipulation of target subscription records
+[+] I/O PIPELINE     : CSV state import / export workflow engine
+[+] SAVINGS SIMULATOR: Real-time slider-driven discretionary spending modeling
+[+] GEMINI AI ENGINE : Autonomous 30-day action plan & optimization advisor
 
-### 1. Clone the Repository
+```
+
+---
+
+## 📐 $ cat architecture.mmd
+
+```mermaid
+graph TD
+    A[User Input / CSV Data] --> B[Pandas Data Engine]
+    B --> C[KPI Calculation & Spending Metrics]
+    B --> D[Rule-Based Health Score Engine]
+    
+    C --> E[Streamlit Dashboard UI]
+    D --> E
+    
+    B --> F[Google Gemini API Engine]
+    F -->|gemini-2.5-flash| G[AI Financial Advisor & Action Plan]
+    G --> E
+
+```
+
+---
+
+## 🖼️ $ display --gallery
+
+---
+
+## ⚡ $ ./quickstart.sh
+
+### Step 1: Clone Repository
+
 ```bash
-git clone [https://github.com/your-username/subscription-auditor.git](https://github.com/your-username/subscription-auditor.git)
+git clone https://github.com/your-username/subscription-auditor.git
 cd subscription-auditor
 
 ```
 
-### 2. Create & Activate a Virtual Environment
+### Step 2: Initialize Virtual Environment
 
 ```bash
-# On Linux / macOS
+# Linux / macOS
 python3 -m venv venv
 source venv/bin/activate
 
-# On Windows
+# Windows (PowerShell / CMD)
 python -m venv venv
-venv\Scripts\activate
+.\venv\Scripts\activate
 
 ```
 
-### 3. Install Dependencies
+### Step 3: Install Required Dependencies
 
 ```bash
 pip install streamlit pandas google-genai python-dotenv
 
 ```
 
-### 4. Configure Environment Variables
+### Step 4: Provision Environment Variables
 
-Create a `.env` file in the root directory and add your Google Gemini API key:
+Construct a `.env` file in the root environment directory:
 
 ```env
 GEMINI_API_KEY="your_gemini_api_key_here"
 
 ```
 
-*(Alternatively, configure `GEMINI_API_KEY` inside `.streamlit/secrets.toml` if deploying to Streamlit Community Cloud).*
+*(Note: For Streamlit Community Cloud deployments, store `GEMINI_API_KEY` in `.streamlit/secrets.toml`)*
 
-### 5. Run the Application
+### Step 5: Execute Dashboard Entrypoint
 
 ```bash
 streamlit run app.py
@@ -72,31 +125,34 @@ streamlit run app.py
 
 ---
 
-## 📂 CSV File Schema
+## 📊 $ cat csv_schema.json
 
-If you choose to upload a custom CSV file, ensure it contains the following mandatory columns:
+When importing custom datasets, verify the payload structure adheres to the following layout:
 
-| Column Name | Type | Description |
+| Field Name | Type | Description |
 | --- | --- | --- |
-| `Service` | Text | Name of the platform (e.g., Netflix, Spotify) |
-| `Monthly Cost` | Numeric | Price per month (e.g., 499.0) |
-| `Category` | Text | One of: *Entertainment, Music, Productivity, AI, Cloud Storage, News, Gaming, Education, Shopping, Other* |
-| `Essential` | Boolean | `TRUE` if essential, `FALSE` if discretionary |
+| `Service` | `string` | Target service identifier (e.g., *Netflix*, *Spotify*) |
+| `Monthly Cost` | `float` | Monthly billing rate in numeric format (e.g., `499.0`) |
+| `Category` | `enum` | Classification: *Entertainment, Music, Productivity, AI, Cloud Storage, News, Gaming, Education, Shopping, Other* |
+| `Essential` | `bool` | Spending tier: `TRUE` (Essential) | `FALSE` (Discretionary) |
 
 ---
 
-## 🛠️ Tech Stack
+## ⚙️ $ tech_stack --list
 
-* **Frontend / UI**: [Streamlit](https://streamlit.io/)
-* **Data Handling**: [Pandas](https://pandas.pydata.org/)
-* **AI Model**: Google Gemini API (`gemini-2.5-flash` via `google-genai`)
-* **Environment Management**: `python-dotenv`
+```
+[FRAMEWORK]  :: Streamlit
+[DATA LAB]   :: Pandas
+[INTELLIGENCE]:: Google Gemini API (gemini-2.5-flash via google-genai)
+[CONFIG]     :: python-dotenv
+
+```
 
 ---
 
-## 📜 License
+## 📄 $ cat LICENSE
 
-This project is licensed under the MIT License — feel free to modify and use it for personal or academic projects.
+Distributed under the **MIT License**. Free for personal modification, educational analysis, and distribution.
 
 ```
 
