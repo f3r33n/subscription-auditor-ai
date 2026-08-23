@@ -15,6 +15,13 @@ A modern, dark-themed financial dashboard built with **Streamlit** for tracking,
 - **🤖 Gemini AI Advisor**: Dynamic financial advice generated via the `google-genai` SDK for audit reports, alternative recommendations, and a 30-day action plan.
 
 ---
+## Pictures
+<img width="1280" height="991" alt="susb1" src="https://github.com/user-attachments/assets/0e0bf238-b620-4918-b77a-bd884f192ee3" />
+<img width="1280" height="998" alt="subs2" src="https://github.com/user-attachments/assets/04359ec2-1d91-43f4-8592-bf30a50f87d0" />
+<img width="1280" height="998" alt="subs3" src="https://github.com/user-attachments/assets/1f3fcd52-f780-4710-bfc9-f823379b5665" />
+<img width="1280" height="994" alt="subs4" src="https://github.com/user-attachments/assets/50df9747-93e8-4379-8c12-847b26f3bf0f" />
+
+
 
 ## 🚀 Quick Start
 
